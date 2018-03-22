@@ -1,7 +1,5 @@
 import React from 'react';
-const createDOMPurify = require('dompurify');
-
-const DOMPurify = createDOMPurify();
+require('../../purify.min.js');
 
 export default ({ content, className }) => {
   return <div className={className}>{content}</div>;
