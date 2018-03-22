@@ -1,5 +1,7 @@
 import React from 'react';
-import DOMPurify from 'dompurify';
+const createDOMPurify = require('dompurify');
+
+const DOMPurify = createDOMPurify();
 
 export default ({ content, className }) => {
   return <div className={className}>{content}</div>;
